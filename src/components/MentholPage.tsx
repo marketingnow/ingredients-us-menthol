@@ -402,13 +402,24 @@ export default function MentholPage() {
         <h3 className="text-[16px] font-bold" style={{ color: NAVY }}>References</h3>
         <div className="grid md:grid-cols-3 text-[12.5px] leading-[1.6]" style={{ color: MUTED, marginTop: 18, gap: 24 }}>
           {[
-            "Eccles R. The pharmacology of menthol and its therapeutic use in respiratory disorders. Br J Pharmacol. 1994.",
-            "Derry S, Moore RA. Topical menthol for chronic pain in adults. Cochrane Database Syst Rev. 2012.",
-            "Davis MF, Stanczyk FZ, Swenberg JA. Menthol: A review of its pharmacology and toxicology. Food Chem Toxicol. 1988.",
+            {
+              text: "FDA OTC Monograph M017, 21 CFR Part 348 — External Analgesic Drug Products for Over-the-Counter Human Use.",
+              url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-348",
+            },
+            {
+              text: "PAIN, Vol. 154(10):2169–2177 — TRPM8 as the principal mediator of menthol-induced analgesia. PubMed ID: 23820004.",
+              url: "https://pubmed.ncbi.nlm.nih.gov/23820004/",
+            },
+            {
+              text: "PMC4178917 — Randomized placebo-controlled trial of topical menthol for chronic musculoskeletal pain.",
+              url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4178917/",
+            },
           ].map((ref, i) => (
             <div key={i} className="flex gap-3">
               <span className="font-semibold" style={{ color: NAVY }}>{i + 1}.</span>
-              <span>{ref}</span>
+              <a href={ref.url} target="_blank" rel="noopener" className="underline hover:opacity-80">
+                {ref.text}
+              </a>
             </div>
           ))}
         </div>
