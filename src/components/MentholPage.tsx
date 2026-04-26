@@ -427,7 +427,7 @@ export default function MentholPage() {
 
       {/* ============ 10. FOOTER RESOURCE BLOCK ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <div className="rounded-[16px] p-8 md:p-10 grid grid-cols-1" style={{ backgroundColor: PALE, gap: 32 }}>
+        <div className="rounded-[16px] p-8 md:p-10 grid md:grid-cols-2" style={{ backgroundColor: PALE, gap: 32 }}>
           <div>
             <h4 className="text-[15px] font-bold" style={{ color: NAVY }}>Related Ingredients</h4>
             <ul style={{ marginTop: 14 }}>
