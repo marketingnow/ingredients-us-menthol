@@ -178,21 +178,6 @@ export default function MentholPage() {
         <div style={{ marginTop: 28 }}>
           {[
             {
-              label: "FDA Monograph",
-              finding: "The FDA OTC external analgesic monograph lists menthol (1.25–16%) as a recognized counterirritant for the temporary relief of minor muscle and joint aches.",
-              source: "FDA External Analgesic OTC Monograph, 21 CFR Part 348",
-            },
-            {
-              label: "Eur. J. Pharmacology",
-              finding: "Research confirms menthol selectively activates TRPM8 cold-receptor channels, producing the cooling sensation that interrupts pain signal transmission at the skin level.",
-              source: "Proudfoot et al. — European Journal of Pharmacology",
-            },
-            {
-              label: "Clin. J. Pain",
-              finding: "Topical menthol formulations produced significant reductions in musculoskeletal pain intensity, with onset of cooling relief reported within minutes of application.",
-              source: "Topp et al. — The Clinical Journal of Pain",
-            },
-            {
               label: "FDA Monograph M017",
               finding: "The FDA OTC external analgesic monograph lists menthol (1.25–16%) as a recognized counterirritant for the temporary relief of minor muscle and joint aches and pains.",
               source: "FDA OTC Monograph M017, 21 CFR Part 348",
