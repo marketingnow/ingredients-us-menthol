@@ -279,12 +279,15 @@ export default function MentholPage() {
             <p className="text-[15px] leading-[1.6] text-white/70" style={{ marginTop: 14 }}>
               Experience fast, long-lasting cooling relief that goes where you need it.
             </p>
-            <button
+            <a
+              href="https://terrafreeze.com/product/terrafreeze-2oz/"
+              target="_blank"
+              rel="noopener"
               className="inline-flex items-center justify-between rounded-md px-5 py-3 text-[12.5px] font-bold tracking-[0.12em] text-white transition hover:brightness-110 w-fit"
               style={{ backgroundColor: GOLD, marginTop: 20 }}
             >
               SHOP TERRAFREEZE<span className="ml-3">›</span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -386,12 +389,15 @@ export default function MentholPage() {
             <p className="text-[15px] leading-[1.6] text-white/70" style={{ marginTop: 14 }}>
               Join thousands who trust TERRAFREEZE for fast, effective cooling relief.
             </p>
-            <button
+            <a
+              href="https://terrafreeze.com/product/terrafreeze-2oz/"
+              target="_blank"
+              rel="noopener"
               className="inline-flex items-center justify-between rounded-md px-5 py-3 text-[12.5px] font-bold tracking-[0.12em] text-white transition hover:brightness-110 w-fit"
               style={{ backgroundColor: GOLD, marginTop: 20 }}
             >
               SHOP NOW<span className="ml-3">›</span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
