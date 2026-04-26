@@ -416,13 +416,18 @@ export default function MentholPage() {
 
       {/* ============ 10. FOOTER RESOURCE BLOCK ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <div className="rounded-[16px] p-8 md:p-10 grid md:grid-cols-3" style={{ backgroundColor: PALE, gap: 32 }}>
+        <div className="rounded-[16px] p-8 md:p-10 grid md:grid-cols-2" style={{ backgroundColor: PALE, gap: 32 }}>
           <div>
             <h4 className="text-[15px] font-bold" style={{ color: NAVY }}>Related Ingredients</h4>
             <ul style={{ marginTop: 14 }}>
-              {["Emu Oil", "Camphor", "Arnica", "Aloe Vera"].map((r, i) => (
-                <li key={r} className="text-[14.5px]" style={{ marginTop: i === 0 ? 0 : 8 }}>
-                  <a href="#" className="underline" style={{ color: ACCENT }}>{r}</a>
+              {[
+                { label: "Emu Oil", href: "https://terrafreeze.com/ingredients/emu-oil" },
+                { label: "Camphor", href: "https://terrafreeze.com/ingredients/camphor" },
+                { label: "Arnica", href: "https://terrafreeze.com/ingredients/arnica" },
+                { label: "Aloe Vera", href: "https://terrafreeze.com/ingredients/aloe-vera" },
+              ].map((r, i) => (
+                <li key={r.label} className="text-[14.5px]" style={{ marginTop: i === 0 ? 0 : 8 }}>
+                  <a href={r.href} className="underline" style={{ color: ACCENT }}>{r.label}</a>
                 </li>
               ))}
             </ul>
@@ -430,18 +435,17 @@ export default function MentholPage() {
           <div>
             <h4 className="text-[15px] font-bold" style={{ color: NAVY }}>Helpful Links</h4>
             <ul style={{ marginTop: 14 }}>
-              {["About TERRAFREEZE", "How It Works", "Ingredients Overview", "FAQs"].map((r, i) => (
-                <li key={r} className="text-[14.5px]" style={{ marginTop: i === 0 ? 0 : 8 }}>
-                  <a href="#" className="underline" style={{ color: ACCENT }}>{r}</a>
+              {[
+                { label: "About TERRAFREEZE", href: "https://terrafreeze.com/about-us" },
+                { label: "How It Works", href: "https://terrafreeze.com/how-it-works" },
+                { label: "Ingredients Overview", href: "https://terrafreeze.com/ingredients" },
+                { label: "FAQs", href: "https://terrafreeze.com/faq" },
+              ].map((r, i) => (
+                <li key={r.label} className="text-[14.5px]" style={{ marginTop: i === 0 ? 0 : 8 }}>
+                  <a href={r.href} className="underline" style={{ color: ACCENT }}>{r.label}</a>
                 </li>
               ))}
             </ul>
-          </div>
-          <div>
-            <h4 className="text-[15px] font-bold" style={{ color: NAVY }}>Medical Reviewer</h4>
-            <p className="text-[14.5px] font-semibold" style={{ color: NAVY, marginTop: 14 }}>Dr. Michael Andrews, DPT</p>
-            <p className="text-[12px]" style={{ color: MUTED, marginTop: 4 }}>Doctor of Physical Therapy</p>
-            <p className="text-[12px]" style={{ color: MUTED, marginTop: 2 }}>Medical Reviewer</p>
           </div>
         </div>
       </section>
