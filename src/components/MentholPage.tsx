@@ -200,7 +200,7 @@ export default function MentholPage() {
             <h3 className="text-[22px] md:text-[26px] font-bold" style={{ color: NAVY }}>How people use TERRAFREEZE</h3>
             <div className="grid grid-cols-2 md:grid-cols-4" style={{ marginTop: 24, gap: 20 }}>
               {[
-                { title: "Bruises & Bumps", body: "Apply directly to the bruised area. Cooling relief that helps calm soreness and tenderness fast." },
+                { title: "Bruising & Discoloration", body: "Apply directly to the bruised area. Cooling relief that helps calm soreness and tenderness fast." },
                 { title: "Neck & Shoulders", body: "Works into knots fast. Cooling kicks in within minutes and stays through your day." },
                 { title: "Post-Workout Soreness", body: "Apply right after activity. Stop the soreness before it sets in and stiffens up overnight." },
                 { title: "Everyday Aches", body: "Desk pain, travel tension, stress headaches — relief that fits in your bag and your routine." },
