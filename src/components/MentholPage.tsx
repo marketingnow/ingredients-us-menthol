@@ -53,7 +53,7 @@ export default function MentholPage() {
     >
       {/* ============ 1. HERO (full bleed) ============ */}
       <section className="relative w-full" style={{ backgroundColor: NAVY_DEEP }}>
-        <div className="mx-auto max-w-[640px] px-5 pt-10 pb-44 md:pt-12 md:pb-56 text-center">
+        <div className="mx-auto max-w-[900px] px-5 pt-10 pb-44 md:pt-12 md:pb-56 text-center">
           <span className="inline-block rounded-full border border-white/30 px-4 py-1.5 text-[11px] font-semibold tracking-[0.14em] text-white">
             COOLING RELIEF
           </span>
