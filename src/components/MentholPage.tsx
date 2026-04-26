@@ -53,8 +53,7 @@ export default function MentholPage() {
     >
       {/* ============ 1. HERO (full bleed) ============ */}
       <section className="relative w-full" style={{ backgroundColor: NAVY_DEEP }}>
-        <div className="mx-auto max-w-[640px] px-5 pt-14 pb-44 md:pt-20 md:pb-56 text-center">
-          <p className="text-[12px] tracking-wide text-white/60 mb-5">Last reviewed: April 2026</p>
+        <div className="mx-auto max-w-[640px] px-5 pt-10 pb-44 md:pt-12 md:pb-56 text-center">
           <span className="inline-block rounded-full border border-white/30 px-4 py-1.5 text-[11px] font-semibold tracking-[0.14em] text-white">
             COOLING RELIEF
           </span>
@@ -80,13 +79,18 @@ export default function MentholPage() {
 
       {/* ============ 2. TL;DR ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <p className="text-[11px] font-semibold tracking-[0.16em]" style={{ color: ACCENT }}>TL;DR</p>
-        <h2 className="text-[26px] md:text-[32px] font-bold leading-[1.2]" style={{ color: NAVY, marginTop: 8 }}>
-          Why menthol works fast
-        </h2>
-        <p className="text-[17px] leading-[1.65]" style={{ color: MUTED, marginTop: 14 }}>
-          Menthol activates cold-sensing nerves to create an instant cooling sensation that helps "distract" from pain and tension. Ideal for tense jaws, sore necks, and tight shoulders — fresh scent, non-greasy feel.
-        </p>
+        <div
+          className="mx-auto max-w-[760px] rounded-[18px] border-l-4 px-7 py-8 md:px-10 md:py-10 text-center"
+          style={{ borderLeftColor: ACCENT, backgroundColor: PALE, border: `1px solid ${BORDER}`, borderLeft: `4px solid ${ACCENT}` }}
+        >
+          <p className="text-[11px] font-semibold tracking-[0.16em]" style={{ color: ACCENT }}>TL;DR</p>
+          <h2 className="text-[26px] md:text-[32px] font-bold leading-[1.2]" style={{ color: NAVY, marginTop: 8 }}>
+            Why menthol works fast
+          </h2>
+          <p className="text-[17px] leading-[1.65] mx-auto" style={{ color: MUTED, marginTop: 14, maxWidth: 620 }}>
+            Menthol activates cold-sensing nerves to create an instant cooling sensation that helps "distract" from pain and tension. Ideal for tense jaws, sore necks, and tight shoulders — fresh scent, non-greasy feel.
+          </p>
+        </div>
       </section>
       {HR}
 
