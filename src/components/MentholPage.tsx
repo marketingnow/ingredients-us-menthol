@@ -403,22 +403,22 @@ export default function MentholPage() {
         <div className="grid md:grid-cols-3 text-[12.5px] leading-[1.6]" style={{ color: MUTED, marginTop: 18, gap: 24 }}>
           {[
             {
-              text: "FDA OTC Monograph M017, 21 CFR Part 348 — External Analgesic Drug Products for Over-the-Counter Human Use.",
+              ref: "FDA OTC Monograph M017, 21 CFR Part 348",
               url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-348",
             },
             {
-              text: "PAIN, Vol. 154(10):2169–2177 — TRPM8 as the principal mediator of menthol-induced analgesia. PubMed ID: 23820004.",
+              ref: "PAIN, Vol. 154(10):2169–2177 — PubMed ID: 23820004",
               url: "https://pubmed.ncbi.nlm.nih.gov/23820004/",
             },
             {
-              text: "PMC4178917 — Randomized placebo-controlled trial of topical menthol for chronic musculoskeletal pain.",
+              ref: "PMC4178917 — Randomized Placebo-Controlled Trial, 2014",
               url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4178917/",
             },
-          ].map((ref, i) => (
+          ].map((item, i) => (
             <div key={i} className="flex gap-3">
               <span className="font-semibold" style={{ color: NAVY }}>{i + 1}.</span>
-              <a href={ref.url} target="_blank" rel="noopener" className="underline hover:opacity-80">
-                {ref.text}
+              <a href={item.url} target="_blank" rel="noopener" className="underline hover:opacity-80">
+                {item.ref}
               </a>
             </div>
           ))}
