@@ -60,7 +60,7 @@ export default function MentholPage() {
     >
       {/* ============ 1. HERO ============ */}
       <section className="relative" style={{ backgroundColor: NAVY_DEEP }}>
-        <div className="mx-auto max-w-[1180px] px-6 pt-14 pb-44 md:pt-20 md:pb-56 text-center">
+        <div className="mx-auto max-w-[960px] px-6 pt-14 pb-44 md:pt-20 md:pb-56 text-center">
           <p className="text-[12px] tracking-wide text-white/60 mb-5">
             Last reviewed: April 2026
           </p>
@@ -81,7 +81,7 @@ export default function MentholPage() {
         </div>
 
         {/* Overlapping image */}
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-[-110px] md:bottom-[-140px] w-[92%] max-w-[1080px] px-6">
+        <div className="absolute left-1/2 -translate-x-1/2 bottom-[-110px] md:bottom-[-140px] w-[92%] max-w-[880px] px-6">
           <div
             className="overflow-hidden rounded-[18px]"
             style={{ boxShadow: "0 24px 60px -20px rgba(0,0,0,0.45)" }}
@@ -100,7 +100,7 @@ export default function MentholPage() {
       <div className="h-[140px] md:h-[170px]" />
 
       {/* ============ 2. TL;DR ============ */}
-      <section className="mx-auto max-w-[1180px] px-6">
+      <section className="mx-auto max-w-[960px] px-6">
         <div className="max-w-[720px]">
           <p
             className="text-[11px] font-semibold tracking-[0.16em]"
@@ -123,7 +123,7 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 3. EDUCATION + SCIENCE ============ */}
-      <section className="mx-auto max-w-[1180px] px-6 py-14">
+      <section className="mx-auto max-w-[960px] px-6 py-14">
         <div className="grid md:grid-cols-2 gap-10 md:gap-14">
           {/* Left */}
           <div>
@@ -215,7 +215,7 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 4. EXPERT QUOTE + FORMULA ============ */}
-      <section className="mx-auto max-w-[1180px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-10">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="md:border-r md:pr-12" style={{ borderColor: BORDER }}>
             <div
@@ -258,7 +258,7 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 5. USE CASES + CTA ============ */}
-      <section className="mx-auto max-w-[1180px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-10">
         <div className="grid md:grid-cols-[1.6fr_1fr] gap-8">
           <div
             className="rounded-[18px] border p-7 md:p-9"
@@ -323,7 +323,7 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 6. APPLICATION + SAFETY ============ */}
-      <section className="mx-auto max-w-[1180px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-10">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h3
@@ -396,7 +396,7 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 7. CUSTOMER REVIEWS ============ */}
-      <section className="mx-auto max-w-[1180px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-10">
         <h3
           className="text-[20px] md:text-[22px] font-bold"
           style={{ color: NAVY }}
@@ -461,7 +461,7 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 8. FAQ + CTA ============ */}
-      <section className="mx-auto max-w-[1180px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-10">
         <div className="grid md:grid-cols-[1.4fr_1fr] gap-8">
           <div>
             <h3
@@ -530,7 +530,7 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 9. REFERENCES ============ */}
-      <section className="mx-auto max-w-[1180px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-10">
         <h3
           className="text-[16px] font-bold"
           style={{ color: NAVY }}
@@ -552,7 +552,7 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 10. FOOTER RESOURCE BLOCK ============ */}
-      <section className="mx-auto max-w-[1180px] px-6 pb-16 pt-6">
+      <section className="mx-auto max-w-[960px] px-6 pb-16 pt-6">
         <div
           className="rounded-[18px] p-8 md:p-10 grid md:grid-cols-3 gap-8"
           style={{ backgroundColor: PALE }}
