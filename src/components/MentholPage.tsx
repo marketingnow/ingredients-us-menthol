@@ -192,6 +192,21 @@ export default function MentholPage() {
               finding: "Topical menthol formulations produced significant reductions in musculoskeletal pain intensity, with onset of cooling relief reported within minutes of application.",
               source: "Topp et al. — The Clinical Journal of Pain",
             },
+            {
+              label: "FDA Monograph M017",
+              finding: "The FDA OTC external analgesic monograph lists menthol (1.25–16%) as a recognized counterirritant for the temporary relief of minor muscle and joint aches and pains.",
+              source: "FDA OTC Monograph M017, 21 CFR Part 348",
+            },
+            {
+              label: "PAIN Journal, 2013",
+              finding: "TRPM8 is the principal mediator of menthol-induced analgesia. Genetic deletion of TRPM8 completely abolished menthol's pain-relieving effect, confirming the cooling receptor as the core mechanism.",
+              source: "PAIN, Vol. 154(10):2169–2177. PubMed ID: 23820004",
+            },
+            {
+              label: "PMC Randomized Trial, 2014",
+              finding: "A triple-blind, placebo-controlled trial found topical menthol produced a 31% reduction in chronic pain scores — a moderate effect size — compared to placebo in patients with chronic musculoskeletal pain.",
+              source: "PMC4178917 — Slaughterhouse Workers Carpal Tunnel Study",
+            },
           ].map((item, i) => (
             <div
               key={item.label}
