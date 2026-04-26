@@ -97,10 +97,10 @@ export default function MentholPage() {
       </section>
 
       {/* spacer for overlapping image */}
-      <div className="h-[120px] md:h-[150px]" />
+      <div className="h-[110px] md:h-[130px]" />
 
       {/* ============ 2. TL;DR ============ */}
-      <section className="mx-auto max-w-[960px] px-6">
+      <section className="mx-auto max-w-[960px] px-6 pt-2 pb-7">
         <div className="max-w-[720px]">
           <p
             className="text-[11px] font-semibold tracking-[0.16em]"
@@ -119,11 +119,11 @@ export default function MentholPage() {
             Menthol activates cold-sensing nerves to create an instant cooling sensation that helps "distract" from pain and tension. Ideal for tense jaws, sore necks, and tight shoulders — fresh scent, non-greasy feel.
           </p>
         </div>
-        <div className="mt-8 h-px" style={{ backgroundColor: BORDER }} />
+        <div className="mt-7 h-px" style={{ backgroundColor: BORDER }} />
       </section>
 
       {/* ============ 3. EDUCATION + SCIENCE ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-8">
+      <section className="mx-auto max-w-[960px] px-6 py-7">
         <div className="grid md:grid-cols-2 gap-10 md:gap-14">
           {/* Left */}
           <div>
@@ -211,11 +211,11 @@ export default function MentholPage() {
             </div>
           </div>
         </div>
-        <div className="mt-8 h-px" style={{ backgroundColor: BORDER }} />
+        <div className="mt-7 h-px" style={{ backgroundColor: BORDER }} />
       </section>
 
       {/* ============ 4. EXPERT QUOTE + FORMULA ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-8">
+      <section className="mx-auto max-w-[960px] px-6 py-7">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="md:border-r md:pr-12" style={{ borderColor: BORDER }}>
             <div
@@ -255,10 +255,11 @@ export default function MentholPage() {
             </p>
           </div>
         </div>
+        <div className="mt-7 h-px" style={{ backgroundColor: BORDER }} />
       </section>
 
       {/* ============ 5. USE CASES + CTA ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-8">
+      <section className="mx-auto max-w-[960px] px-6 py-7">
         <div className="grid md:grid-cols-[1.6fr_1fr] gap-8">
           <div
             className="rounded-[18px] border p-7 md:p-9"
@@ -320,10 +321,11 @@ export default function MentholPage() {
             </button>
           </div>
         </div>
+        <div className="mt-7 h-px" style={{ backgroundColor: BORDER }} />
       </section>
 
       {/* ============ 6. APPLICATION + SAFETY ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-8">
+      <section className="mx-auto max-w-[960px] px-6 py-7">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h3
@@ -392,11 +394,11 @@ export default function MentholPage() {
             </p>
           </div>
         </div>
-        <div className="mt-8 h-px" style={{ backgroundColor: BORDER }} />
+        <div className="mt-7 h-px" style={{ backgroundColor: BORDER }} />
       </section>
 
       {/* ============ 7. CUSTOMER REVIEWS ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-8">
+      <section className="mx-auto max-w-[960px] px-6 py-7">
         <h3
           className="text-[22px] md:text-[26px] font-bold"
           style={{ color: NAVY }}
@@ -457,11 +459,11 @@ export default function MentholPage() {
             ))}
           </div>
         </div>
-        <div className="mt-8 h-px" style={{ backgroundColor: BORDER }} />
+        <div className="mt-7 h-px" style={{ backgroundColor: BORDER }} />
       </section>
 
       {/* ============ 8. FAQ + CTA ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-8">
+      <section className="mx-auto max-w-[960px] px-6 py-7">
         <div className="grid md:grid-cols-[1.4fr_1fr] gap-8">
           <div>
             <h3
@@ -527,10 +529,11 @@ export default function MentholPage() {
             </button>
           </div>
         </div>
+        <div className="mt-7 h-px" style={{ backgroundColor: BORDER }} />
       </section>
 
       {/* ============ 9. REFERENCES ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-8">
+      <section className="mx-auto max-w-[960px] px-6 py-7">
         <h3
           className="text-[16px] font-bold"
           style={{ color: NAVY }}
@@ -552,7 +555,7 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 10. FOOTER RESOURCE BLOCK ============ */}
-      <section className="mx-auto max-w-[960px] px-6 pb-12 pt-4">
+      <section className="mx-auto max-w-[960px] px-6 pb-12 pt-2">
         <div
           className="rounded-[18px] p-8 md:p-10 grid md:grid-cols-3 gap-8"
           style={{ backgroundColor: PALE }}
