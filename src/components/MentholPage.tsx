@@ -34,7 +34,7 @@ const faqs = [
 ];
 
 // Single page wrapper — every non-bleed section uses this
-const WRAP = "mx-auto w-full max-w-[940px] px-5 md:px-10";
+const WRAP = "mx-auto w-full max-w-[1080px] px-5 md:px-10";
 // Section vertical padding — fixed at 40px
 const SECT = "py-10";
 
@@ -62,7 +62,7 @@ export default function MentholPage() {
         </div>
 
         {/* Overlapping image — wider than the text wrapper */}
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-[-110px] md:bottom-[-140px] w-[94%] max-w-[1080px] px-5">
+        <div className="absolute left-1/2 -translate-x-1/2 bottom-[-110px] md:bottom-[-140px] w-[94%] max-w-[1180px] px-5">
           <div className="overflow-hidden rounded-[18px]" style={{ boxShadow: "0 24px 60px -20px rgba(0,0,0,0.45)" }}>
             <img src={mentholImage} alt="Fresh menthol leaves with ice crystals" className="block w-full h-[240px] md:h-[340px] object-cover" />
           </div>
