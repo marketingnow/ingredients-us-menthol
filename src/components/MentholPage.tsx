@@ -1,5 +1,9 @@
 import { useState } from "react";
 import mentholImage from "@/assets/ingredient-menthol.jpg";
+import useBruisesImg from "@/assets/use-bruises.jpg";
+import useNeckImg from "@/assets/use-neck.jpg";
+import usePostWorkoutImg from "@/assets/use-postworkout.jpg";
+import useEverydayImg from "@/assets/use-everyday.jpg";
 
 /* ============================================================
    EDITABLE INGREDIENT VARIABLES
@@ -18,12 +22,7 @@ const BORDER = "#d9e5ec";
 const FG = "#0f1a24";
 const MUTED = "#5a6b7a";
 
-const useCaseImages = [
-  "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
-  "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80",
-  "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=400&q=80",
-  "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80",
-];
+const useCaseImages = [useBruisesImg, useNeckImg, usePostWorkoutImg, useEverydayImg];
 
 const faqs = [
   { q: "What does menthol do?", a: "Menthol activates cold-sensing TRPM8 receptors in the skin, creating a cooling sensation that helps distract from pain and reduce the perception of discomfort." },
@@ -198,7 +197,7 @@ export default function MentholPage() {
       <section className={`${WRAP} ${SECT}`}>
         <div className="grid md:grid-cols-[1.6fr_1fr] items-start" style={{ gap: 40 }}>
           <div className="rounded-[16px] border p-7 md:p-9" style={{ borderColor: BORDER }}>
-            <h3 className="text-[22px] md:text-[26px] font-bold" style={{ color: NAVY }}>How people use either TERRAFREEZE or Menthol Based cream</h3>
+            <h3 className="text-[22px] md:text-[26px] font-bold" style={{ color: NAVY }}>How people use TERRAFREEZE</h3>
             <div className="grid grid-cols-2 md:grid-cols-4" style={{ marginTop: 24, gap: 20 }}>
               {[
                 { title: "Bruises & Bumps", body: "Apply directly to the bruised area. Cooling relief that helps calm soreness and tenderness fast." },
