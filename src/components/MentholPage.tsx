@@ -299,7 +299,7 @@ export default function MentholPage() {
 
       {/* ============ 8. FAQ + CTA ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <div className="grid md:grid-cols-[1.4fr_1fr] items-start" style={{ gap: 40 }}>
+        <div className="grid md:grid-cols-[1.4fr_1fr] items-center" style={{ gap: 40 }}>
           <div>
             <h3 className="text-[22px] md:text-[26px] font-bold" style={{ color: NAVY }}>FAQs</h3>
             <div style={{ marginTop: 18 }}>
@@ -323,7 +323,7 @@ export default function MentholPage() {
             </div>
           </div>
 
-          <div className="rounded-[16px] p-7 md:p-8 flex flex-col h-fit" style={{ backgroundColor: NAVY_DEEP }}>
+          <div className="rounded-[16px] p-7 md:p-8 flex flex-col h-fit self-center" style={{ backgroundColor: NAVY_DEEP }}>
             <h3 className="text-[22px] md:text-[26px] font-bold text-white leading-[1.25]">Ready for real relief?</h3>
             <p className="text-[15px] leading-[1.6] text-white/70" style={{ marginTop: 14 }}>
               Join thousands who trust TERRAFREEZE for fast, effective cooling relief.
