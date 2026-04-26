@@ -30,6 +30,9 @@ const faqs = [
   { q: "How long does it last?", a: "Cooling relief typically lasts 1-3 hours depending on concentration, application area, and individual skin chemistry." },
   { q: "Can I use it every day?", a: "Yes. Menthol is safe for daily topical use up to 3-4 times per day on intact skin. Discontinue if irritation occurs." },
   { q: "Is menthol safe for sensitive skin?", a: "Most people tolerate menthol well, but those with very sensitive skin should patch-test first. Avoid broken or irritated skin." },
+  { q: "Is menthol good for muscle and joint pain?", a: "Yes. Menthol is FDA-recognized as a counterirritant for the temporary relief of minor muscle and joint aches. At 10% concentration, it creates a sustained cooling effect that competes with pain signals long enough to provide meaningful relief." },
+  { q: "How much menthol is in TERRAFREEZE?", a: "TERRAFREEZE contains 10% menthol — the maximum strength recognized under the FDA OTC external analgesic monograph for topical cooling relief. Most drugstore creams use 1–3%." },
+  { q: "Does menthol actually relieve pain or just mask it?", a: "Both. Menthol activates TRPM8 cold receptors which create a cooling sensation that interrupts pain signals at the skin level — a mechanism confirmed by published research and recognized by the FDA as a legitimate counterirritant effect." },
 ];
 
 // Single page wrapper — every non-bleed section uses this
@@ -57,7 +60,7 @@ export default function MentholPage() {
             COOLING RELIEF
           </span>
           <h1 className="mt-7 text-white font-bold tracking-tight text-[34px] leading-[1.12] md:text-[52px]">
-            Menthol: The Cooling Power<br /> Behind TERRAFREEZE
+            Menthol for Pain Relief:<br /> How It Works in TERRAFREEZE
           </h1>
           <p className="mx-auto mt-5 text-[17px] md:text-[18px] leading-[1.6] text-white/75">
             Used for fast relief from jaw pain, stiff muscles, and everyday aches — no burn, no mess.
@@ -98,7 +101,7 @@ export default function MentholPage() {
         <div className="grid md:grid-cols-[0.92fr_1.08fr] items-start" style={{ gap: 32 }}>
           <div className="w-full">
             <h2 className="text-[28px] md:text-[34px] font-bold leading-[1.15]" style={{ color: NAVY }}>
-              What is menthol and why does it feel so cooling?
+              What does menthol do for pain?
             </h2>
             <p className="text-[16px] leading-[1.7] w-full" style={{ color: MUTED, marginTop: 16 }}>
               Menthol stimulates cold-sensing receptors in the skin, producing an icy-cool sensation that helps reduce the perception of pain and calms surface discomfort quickly.
@@ -260,7 +263,7 @@ export default function MentholPage() {
       <section className={`${WRAP} ${SECT}`}>
         <div className="grid md:grid-cols-[1.6fr_1fr] items-start" style={{ gap: 40 }}>
           <div className="rounded-[16px] border p-7 md:p-9" style={{ borderColor: BORDER }}>
-            <h3 className="text-[22px] md:text-[26px] font-bold" style={{ color: NAVY }}>How people use TERRAFREEZE</h3>
+            <h3 className="text-[22px] md:text-[26px] font-bold" style={{ color: NAVY }}>How people use menthol for pain relief</h3>
             <div className="grid grid-cols-2 md:grid-cols-4" style={{ marginTop: 24, gap: 20 }}>
               {[
                 { title: "Bruising & Discoloration", body: "Apply directly to the bruised area. Cooling relief that helps calm soreness and tenderness fast." },
