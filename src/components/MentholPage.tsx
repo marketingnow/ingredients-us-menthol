@@ -166,13 +166,13 @@ export default function MentholPage() {
 
       {/* ============ 4. EXPERT QUOTE + FORMULA ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <div className="grid md:grid-cols-2 items-start" style={{ gap: 40 }}>
-          <div className="md:pr-10 md:border-r" style={{ borderColor: BORDER }}>
+        <div className="grid md:grid-cols-2 items-stretch" style={{ gap: 48 }}>
+          <div className="md:pr-12 md:border-r-2 flex flex-col justify-center" style={{ borderColor: BORDER }}>
             <div className="text-[56px] leading-none" style={{ color: ACCENT, fontFamily: "Georgia, serif" }}>"</div>
             <p className="text-[20px] md:text-[22px] italic leading-[1.55]" style={{ color: FG, marginTop: -16 }}>
               Menthol's cooling effect comes from TRPM8 receptor activation, which can help reduce the perception of discomfort at the skin level.
             </p>
-            <p className="text-[15px] font-semibold" style={{ color: NAVY, marginTop: 24 }}>— Dr. Michael Andrews, DPT</p>
+            <p className="text-[15px] font-semibold" style={{ color: NAVY, marginTop: 20 }}>— Dr. Michael Andrews, DPT</p>
             <p className="text-[11px] tracking-[0.14em] font-semibold" style={{ color: MUTED, marginTop: 4 }}>PHYSICAL THERAPIST</p>
           </div>
           <div>
