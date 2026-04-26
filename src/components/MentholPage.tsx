@@ -58,7 +58,7 @@ export default function MentholPage() {
             COOLING RELIEF
           </span>
           <h1 className="mt-7 text-white font-bold tracking-tight text-[34px] leading-[1.12] md:text-[52px]">
-            Menthol: The Cooling Power<br className="hidden md:block" /> Behind TERRAFREEZE
+            Menthol: The Cooling Power<br /> Behind TERRAFREEZE
           </h1>
           <p className="mx-auto mt-5 text-[17px] md:text-[18px] leading-[1.6] text-white/75">
             Used for fast relief from jaw pain, stiff muscles, and everyday aches — no burn, no mess.
