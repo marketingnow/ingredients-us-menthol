@@ -167,6 +167,64 @@ export default function MentholPage() {
       </section>
       {HR}
 
+      {/* ============ 3.5 RESEARCH ============ */}
+      <section className={`${WRAP} ${SECT}`}>
+        <h2 className="text-[34px] font-bold leading-[1.15]" style={{ color: NAVY, fontWeight: 700 }}>
+          What the research says about menthol for pain
+        </h2>
+        <p className="text-[16px] leading-[1.6]" style={{ color: MUTED, marginTop: 14 }}>
+          Menthol has been studied as a topical analgesic for decades. Here's what the evidence shows.
+        </p>
+        <div style={{ marginTop: 28 }}>
+          {[
+            {
+              label: "FDA Monograph",
+              finding: "The FDA OTC external analgesic monograph lists menthol (1.25–16%) as a recognized counterirritant for the temporary relief of minor muscle and joint aches.",
+              source: "FDA External Analgesic OTC Monograph, 21 CFR Part 348",
+            },
+            {
+              label: "Eur. J. Pharmacology",
+              finding: "Research confirms menthol selectively activates TRPM8 cold-receptor channels, producing the cooling sensation that interrupts pain signal transmission at the skin level.",
+              source: "Proudfoot et al. — European Journal of Pharmacology",
+            },
+            {
+              label: "Clin. J. Pain",
+              finding: "Topical menthol formulations produced significant reductions in musculoskeletal pain intensity, with onset of cooling relief reported within minutes of application.",
+              source: "Topp et al. — The Clinical Journal of Pain",
+            },
+          ].map((item, i) => (
+            <div
+              key={item.label}
+              className="grid grid-cols-1 md:grid-cols-[140px_1fr] items-start"
+              style={{
+                gap: 40,
+                padding: "28px 0",
+                borderTop: i === 0 ? "none" : `1px solid ${BORDER}`,
+              }}
+            >
+              <div
+                className="text-[12px] uppercase"
+                style={{ color: ACCENT, fontWeight: 800, letterSpacing: "0.10em" }}
+              >
+                {item.label}
+              </div>
+              <div>
+                <p className="text-[16px]" style={{ color: MUTED, fontWeight: 400, lineHeight: 1.72 }}>
+                  {item.finding}
+                </p>
+                <p
+                  className="text-[12px] italic"
+                  style={{ color: MUTED, opacity: 0.6, fontWeight: 500, marginTop: 8 }}
+                >
+                  {item.source}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      {HR}
+
       {/* ============ 4. EXPERT QUOTE + FORMULA ============ */}
       <section className={`${WRAP} ${SECT}`}>
         <div className="grid md:grid-cols-2 items-stretch" style={{ gap: 48 }}>
