@@ -92,7 +92,7 @@ export default function MentholPage() {
 
       {/* ============ 3. EDUCATION + SCIENCE ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <div className="grid md:grid-cols-2" style={{ gap: 40 }}>
+        <div className="grid md:grid-cols-2 items-start" style={{ gap: 40 }}>
           <div>
             <h2 className="text-[26px] md:text-[32px] font-bold leading-[1.2]" style={{ color: NAVY }}>
               What is menthol and why does it feel so cooling?
@@ -141,7 +141,7 @@ export default function MentholPage() {
 
       {/* ============ 4. EXPERT QUOTE + FORMULA ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <div className="grid md:grid-cols-2" style={{ gap: 40 }}>
+        <div className="grid md:grid-cols-2 items-start" style={{ gap: 40 }}>
           <div className="md:pr-10 md:border-r" style={{ borderColor: BORDER }}>
             <div className="text-[56px] leading-none" style={{ color: ACCENT, fontFamily: "Georgia, serif" }}>"</div>
             <p className="text-[20px] md:text-[22px] italic leading-[1.55]" style={{ color: FG, marginTop: -16 }}>
@@ -167,7 +167,7 @@ export default function MentholPage() {
 
       {/* ============ 5. USE CASES + CTA ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <div className="grid md:grid-cols-[1.6fr_1fr]" style={{ gap: 40 }}>
+        <div className="grid md:grid-cols-[1.6fr_1fr] items-start" style={{ gap: 40 }}>
           <div className="rounded-[16px] border p-7 md:p-9" style={{ borderColor: BORDER }}>
             <h3 className="text-[22px] md:text-[26px] font-bold" style={{ color: NAVY }}>How people use it</h3>
             <div className="grid grid-cols-2 md:grid-cols-4" style={{ marginTop: 24, gap: 20 }}>
@@ -209,7 +209,7 @@ export default function MentholPage() {
 
       {/* ============ 6. APPLICATION + SAFETY ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <div className="grid md:grid-cols-2" style={{ gap: 40 }}>
+        <div className="grid md:grid-cols-2 items-start" style={{ gap: 40 }}>
           <div>
             <h3 className="text-[22px] md:text-[26px] font-bold" style={{ color: NAVY }}>How to apply safely</h3>
             <ol style={{ marginTop: 24 }}>
@@ -274,7 +274,7 @@ export default function MentholPage() {
 
       {/* ============ 8. FAQ + CTA ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <div className="grid md:grid-cols-[1.4fr_1fr]" style={{ gap: 40 }}>
+        <div className="grid md:grid-cols-[1.4fr_1fr] items-start" style={{ gap: 40 }}>
           <div>
             <h3 className="text-[22px] md:text-[26px] font-bold" style={{ color: NAVY }}>FAQs</h3>
             <div style={{ marginTop: 18 }}>
