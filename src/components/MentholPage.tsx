@@ -128,36 +128,25 @@ export default function MentholPage() {
             <div style={{ marginTop: 20 }}>
               {[
                 {
-                  icon: (
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7">
-                      <path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07L19.07 4.93M7 5l5 3 5-3M7 19l5-3 5 3M5 7l3 5-3 5M19 7l-3 5 3 5" />
-                    </svg>
-                  ),
                   title: "Activates cold receptors",
                   body: "Menthol binds to TRPM8 receptors on sensory nerves, creating a cooling sensation.",
                 },
                 {
-                  icon: (
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7">
-                      <path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07L19.07 4.93M7 5l5 3 5-3M7 19l5-3 5 3M5 7l3 5-3 5M19 7l-3 5 3 5" />
-                    </svg>
-                  ),
                   title: "Helps reduce pain signals",
                   body: 'The cooling effect may "distract" from pain by competing with pain signals sent to the brain.',
                 },
                 {
-                  icon: (
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7">
-                      <circle cx="12" cy="12" r="9" />
-                      <path d="M12 7v5l3 2" />
-                    </svg>
-                  ),
                   title: "Fast acting, temporary relief",
                   body: "Cooling begins within seconds and provides short-term relief for sore, tired muscles and joints.",
                 },
               ].map((p, i) => (
                 <div key={p.title} className="flex gap-4" style={{ marginTop: i === 0 ? 0 : 18 }}>
-                  <div className="shrink-0" style={{ color: ACCENT }}>{p.icon}</div>
+                  <div
+                    className="shrink-0 flex items-center justify-center h-8 w-8 rounded-full text-[14px] font-bold"
+                    style={{ backgroundColor: ACCENT, color: "#fff" }}
+                  >
+                    {i + 1}
+                  </div>
                   <div>
                     <p className="font-bold text-[16px]" style={{ color: NAVY }}>{p.title}</p>
                     <p className="text-[14.5px] leading-[1.6]" style={{ color: MUTED, marginTop: 4 }}>{p.body}</p>
