@@ -181,16 +181,19 @@ export default function MentholPage() {
               label: "FDA Monograph M017",
               finding: "The FDA OTC external analgesic monograph lists menthol (1.25–16%) as a recognized counterirritant for the temporary relief of minor muscle and joint aches and pains.",
               source: "FDA OTC Monograph M017, 21 CFR Part 348",
+              url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-348",
             },
             {
               label: "PAIN Journal, 2013",
               finding: "TRPM8 is the principal mediator of menthol-induced analgesia. Genetic deletion of TRPM8 completely abolished menthol's pain-relieving effect, confirming the cooling receptor as the core mechanism.",
-              source: "PAIN, Vol. 154(10):2169–2177. PubMed ID: 23820004",
+              source: "PAIN, Vol. 154(10):2169–2177 — PubMed ID: 23820004",
+              url: "https://pubmed.ncbi.nlm.nih.gov/23820004/",
             },
             {
               label: "PMC Randomized Trial, 2014",
               finding: "A triple-blind, placebo-controlled trial found topical menthol produced a 31% reduction in chronic pain scores — a moderate effect size — compared to placebo in patients with chronic musculoskeletal pain.",
-              source: "PMC4178917 — Slaughterhouse Workers Carpal Tunnel Study",
+              source: "PMC4178917 — Randomized Placebo-Controlled Trial",
+              url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4178917/",
             },
           ].map((item, i) => (
             <div
@@ -216,7 +219,9 @@ export default function MentholPage() {
                   className="text-[12px] italic"
                   style={{ color: MUTED, opacity: 0.6, fontWeight: 500, marginTop: 8 }}
                 >
-                  {item.source}
+                  <a href={item.url} target="_blank" rel="noopener" className="underline hover:opacity-80">
+                    {item.source}
+                  </a>
                 </p>
               </div>
             </div>
