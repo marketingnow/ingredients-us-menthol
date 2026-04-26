@@ -9,8 +9,14 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as MentholRouteImport } from './routes/menthol'
 import { Route as IndexRouteImport } from './routes/index'
 
+const MentholRoute = MentholRouteImport.update({
+  id: '/menthol',
+  path: '/menthol',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +25,39 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/menthol': typeof MentholRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/menthol': typeof MentholRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/menthol': typeof MentholRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/menthol'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/menthol'
+  id: '__root__' | '/' | '/menthol'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  MentholRoute: typeof MentholRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/menthol': {
+      id: '/menthol'
+      path: '/menthol'
+      fullPath: '/menthol'
+      preLoaderRoute: typeof MentholRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +70,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  MentholRoute: MentholRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
