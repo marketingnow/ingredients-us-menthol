@@ -78,10 +78,10 @@ export default function MentholPage() {
       <div style={{ marginTop: "-40px" }} />
 
       {/* ============ 2. TL;DR ============ */}
-      <section className={`${WRAP} ${SECT}`}>
+      <section className={`${WRAP} ${SECT}`} style={{ paddingTop: 64 }}>
         <div
-          className="mx-auto max-w-[760px] rounded-[18px] border-l-4 px-7 py-8 md:px-10 md:py-10 text-center"
-          style={{ borderLeftColor: ACCENT, backgroundColor: PALE, border: `1px solid ${BORDER}`, borderLeft: `4px solid ${ACCENT}` }}
+          className="mx-auto max-w-[760px] rounded-[18px] px-7 py-8 md:px-10 md:py-10 text-center bg-white"
+          style={{ border: "2px solid #1F5F4A" }}
         >
           <p className="text-[11px] font-semibold tracking-[0.16em]" style={{ color: ACCENT }}>TL;DR</p>
           <h2 className="text-[26px] md:text-[32px] font-bold leading-[1.2]" style={{ color: NAVY, marginTop: 8 }}>
