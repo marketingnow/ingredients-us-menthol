@@ -400,7 +400,7 @@ export default function MentholPage() {
       {/* ============ 9. REFERENCES ============ */}
       <section className={`${WRAP} ${SECT}`}>
         <h3 className="text-[16px] font-bold" style={{ color: NAVY }}>References</h3>
-        <div className="grid md:grid-cols-3 text-[12.5px] leading-[1.6]" style={{ color: MUTED, marginTop: 18, gap: 24 }}>
+        <div className="grid grid-cols-1 text-[12.5px] leading-[1.6]" style={{ color: MUTED, marginTop: 18, gap: 16 }}>
           {[
             {
               ref: "FDA OTC Monograph M017, 21 CFR Part 348",
@@ -427,7 +427,7 @@ export default function MentholPage() {
 
       {/* ============ 10. FOOTER RESOURCE BLOCK ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <div className="rounded-[16px] p-8 md:p-10 grid grid-cols-1" style={{ backgroundColor: PALE, gap: 32 }}>
+        <div className="rounded-[16px] p-8 md:p-10 grid md:grid-cols-2" style={{ backgroundColor: PALE, gap: 32 }}>
           <div>
             <h4 className="text-[15px] font-bold" style={{ color: NAVY }}>Related Ingredients</h4>
             <ul style={{ marginTop: 14 }}>
