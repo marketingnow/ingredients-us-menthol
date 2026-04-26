@@ -92,7 +92,7 @@ export default function MentholPage() {
 
       {/* ============ 3. EDUCATION + SCIENCE ============ */}
       <section className={`${WRAP} ${SECT}`}>
-        <div className="grid md:grid-cols-2 items-start" style={{ gap: 40 }}>
+        <div className="grid md:grid-cols-[0.92fr_1.08fr] items-start" style={{ gap: 32 }}>
           <div className="w-full">
             <h2 className="text-[28px] md:text-[34px] font-bold leading-[1.15]" style={{ color: NAVY }}>
               What is menthol and why does it feel so cooling?
@@ -114,12 +114,12 @@ export default function MentholPage() {
             </ul>
           </div>
 
-          <div className="rounded-[16px] p-7 md:p-9" style={{ backgroundColor: PALE }}>
+          <div className="rounded-[16px] p-6 md:p-7" style={{ backgroundColor: PALE }}>
             <p className="text-[11px] font-semibold tracking-[0.16em]" style={{ color: ACCENT }}>THE SCIENCE</p>
             <h3 className="text-[22px] md:text-[26px] font-bold" style={{ color: NAVY, marginTop: 8 }}>
               How menthol works in the body
             </h3>
-            <div style={{ marginTop: 24 }}>
+            <div style={{ marginTop: 20 }}>
               {[
                 {
                   icon: (
@@ -150,7 +150,7 @@ export default function MentholPage() {
                   body: "Cooling begins within seconds and provides short-term relief for sore, tired muscles and joints.",
                 },
               ].map((p, i) => (
-                <div key={p.title} className="flex gap-4" style={{ marginTop: i === 0 ? 0 : 22 }}>
+                <div key={p.title} className="flex gap-4" style={{ marginTop: i === 0 ? 0 : 18 }}>
                   <div className="shrink-0" style={{ color: ACCENT }}>{p.icon}</div>
                   <div>
                     <p className="font-bold text-[16px]" style={{ color: NAVY }}>{p.title}</p>
