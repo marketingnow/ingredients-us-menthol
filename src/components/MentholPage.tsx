@@ -34,9 +34,14 @@ const faqs = [
 ];
 
 // Single page wrapper — every non-bleed section uses this
-const WRAP = "mx-auto w-full max-w-[940px] px-5 md:px-10";
+const WRAP = "mx-auto w-full max-w-[1080px] px-5 md:px-10";
 // Section vertical padding — fixed at 40px
 const SECT = "py-10";
+const HR = (
+  <div className="mx-auto w-full max-w-[1080px] px-5 md:px-10">
+    <div className="h-px w-full" style={{ backgroundColor: BORDER }} />
+  </div>
+);
 
 export default function MentholPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -62,7 +67,7 @@ export default function MentholPage() {
         </div>
 
         {/* Overlapping image — wider than the text wrapper */}
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-[-110px] md:bottom-[-140px] w-[94%] max-w-[1080px] px-5">
+        <div className="absolute left-1/2 -translate-x-1/2 bottom-[-110px] md:bottom-[-140px] w-[94%] max-w-[1180px] px-5">
           <div className="overflow-hidden rounded-[18px]" style={{ boxShadow: "0 24px 60px -20px rgba(0,0,0,0.45)" }}>
             <img src={mentholImage} alt="Fresh menthol leaves with ice crystals" className="block w-full h-[240px] md:h-[340px] object-cover" />
           </div>
@@ -83,6 +88,7 @@ export default function MentholPage() {
           Menthol activates cold-sensing nerves to create an instant cooling sensation that helps "distract" from pain and tension. Ideal for tense jaws, sore necks, and tight shoulders — fresh scent, non-greasy feel.
         </p>
       </section>
+      {HR}
 
       {/* ============ 3. EDUCATION + SCIENCE ============ */}
       <section className={`${WRAP} ${SECT}`}>
@@ -131,11 +137,12 @@ export default function MentholPage() {
           </div>
         </div>
       </section>
+      {HR}
 
       {/* ============ 4. EXPERT QUOTE + FORMULA ============ */}
       <section className={`${WRAP} ${SECT}`}>
         <div className="grid md:grid-cols-2" style={{ gap: 40 }}>
-          <div>
+          <div className="md:pr-10 md:border-r" style={{ borderColor: BORDER }}>
             <div className="text-[56px] leading-none" style={{ color: ACCENT, fontFamily: "Georgia, serif" }}>"</div>
             <p className="text-[20px] md:text-[22px] italic leading-[1.55]" style={{ color: FG, marginTop: -16 }}>
               Menthol's cooling effect comes from TRPM8 receptor activation, which can help reduce the perception of discomfort at the skin level.
@@ -156,6 +163,7 @@ export default function MentholPage() {
           </div>
         </div>
       </section>
+      {HR}
 
       {/* ============ 5. USE CASES + CTA ============ */}
       <section className={`${WRAP} ${SECT}`}>
@@ -197,6 +205,7 @@ export default function MentholPage() {
           </div>
         </div>
       </section>
+      {HR}
 
       {/* ============ 6. APPLICATION + SAFETY ============ */}
       <section className={`${WRAP} ${SECT}`}>
@@ -238,6 +247,7 @@ export default function MentholPage() {
           </div>
         </div>
       </section>
+      {HR}
 
       {/* ============ 7. CUSTOMER REVIEWS ============ */}
       <section className={`${WRAP} ${SECT}`}>
@@ -260,6 +270,7 @@ export default function MentholPage() {
           ))}
         </div>
       </section>
+      {HR}
 
       {/* ============ 8. FAQ + CTA ============ */}
       <section className={`${WRAP} ${SECT}`}>
@@ -301,6 +312,7 @@ export default function MentholPage() {
           </div>
         </div>
       </section>
+      {HR}
 
       {/* ============ 9. REFERENCES ============ */}
       <section className={`${WRAP} ${SECT}`}>
