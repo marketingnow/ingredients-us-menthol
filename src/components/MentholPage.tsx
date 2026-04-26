@@ -400,7 +400,7 @@ export default function MentholPage() {
       {/* ============ 9. REFERENCES ============ */}
       <section className={`${WRAP} ${SECT}`}>
         <h3 className="text-[16px] font-bold" style={{ color: NAVY }}>References</h3>
-        <div className="grid md:grid-cols-3 text-[12.5px] leading-[1.6]" style={{ color: MUTED, marginTop: 18, gap: 24 }}>
+        <div className="grid grid-cols-1 text-[12.5px] leading-[1.6]" style={{ color: MUTED, marginTop: 18, gap: 16 }}>
           {[
             {
               ref: "FDA OTC Monograph M017, 21 CFR Part 348",
