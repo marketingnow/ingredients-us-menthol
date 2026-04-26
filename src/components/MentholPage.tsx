@@ -75,7 +75,7 @@ export default function MentholPage() {
             Menthol: The Cooling Power
             <br className="hidden md:block" /> Behind TERRAFREEZE
           </h1>
-          <p className="mx-auto mt-5 max-w-[560px] text-[15px] md:text-[16px] leading-[1.6] text-white/75">
+          <p className="mx-auto mt-5 max-w-[560px] text-[17px] md:text-[18px] leading-[1.6] text-white/75">
             Used for fast relief from jaw pain, stiff muscles, and everyday aches — no burn, no mess.
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function MentholPage() {
       </section>
 
       {/* spacer for overlapping image */}
-      <div className="h-[140px] md:h-[170px]" />
+      <div className="h-[120px] md:h-[150px]" />
 
       {/* ============ 2. TL;DR ============ */}
       <section className="mx-auto max-w-[960px] px-6">
@@ -115,25 +115,25 @@ export default function MentholPage() {
             Why menthol works fast
           </h2>
           {/* INGREDIENT_PRIMARY_BENEFIT */}
-          <p className="mt-4 text-[15px] leading-[1.7]" style={{ color: MUTED }}>
+          <p className="mt-4 text-[17px] leading-[1.65]" style={{ color: MUTED }}>
             Menthol activates cold-sensing nerves to create an instant cooling sensation that helps "distract" from pain and tension. Ideal for tense jaws, sore necks, and tight shoulders — fresh scent, non-greasy feel.
           </p>
         </div>
-        <div className="mt-12 h-px" style={{ backgroundColor: BORDER }} />
+        <div className="mt-8 h-px" style={{ backgroundColor: BORDER }} />
       </section>
 
       {/* ============ 3. EDUCATION + SCIENCE ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-14">
+      <section className="mx-auto max-w-[960px] px-6 py-8">
         <div className="grid md:grid-cols-2 gap-10 md:gap-14">
           {/* Left */}
           <div>
             <h2
-              className="text-[24px] md:text-[28px] font-bold leading-[1.2]"
+              className="text-[28px] md:text-[32px] font-bold leading-[1.2]"
               style={{ color: NAVY }}
             >
               What is menthol and why does it feel so cooling?
             </h2>
-            <p className="mt-5 text-[15px] leading-[1.7]" style={{ color: MUTED }}>
+            <p className="mt-5 text-[17px] leading-[1.65]" style={{ color: MUTED }}>
               Menthol stimulates cold-sensing receptors in the skin, producing an icy-cool sensation that helps reduce the perception of pain and calms surface discomfort quickly.
             </p>
             <ul className="mt-7 space-y-3">
@@ -147,7 +147,7 @@ export default function MentholPage() {
                     className="mt-1.5 h-[18px] w-[3px] rounded-full shrink-0"
                     style={{ backgroundColor: ACCENT }}
                   />
-                  <span className="text-[14.5px]" style={{ color: FG }}>
+                  <span className="text-[15.5px]" style={{ color: FG }}>
                     {item}
                   </span>
                 </li>
@@ -167,7 +167,7 @@ export default function MentholPage() {
               THE SCIENCE
             </p>
             <h3
-              className="mt-2 text-[20px] md:text-[22px] font-bold"
+              className="mt-2 text-[22px] md:text-[26px] font-bold"
               style={{ color: NAVY }}
             >
               How menthol works in the body
@@ -199,10 +199,10 @@ export default function MentholPage() {
                     {p.icon}
                   </div>
                   <div>
-                    <p className="font-semibold text-[14.5px]" style={{ color: NAVY }}>
+                    <p className="font-semibold text-[15.5px]" style={{ color: NAVY }}>
                       {p.title}
                     </p>
-                    <p className="mt-1 text-[13.5px] leading-[1.6]" style={{ color: MUTED }}>
+                    <p className="mt-1 text-[15px] leading-[1.6]" style={{ color: MUTED }}>
                       {p.body}
                     </p>
                   </div>
@@ -211,11 +211,11 @@ export default function MentholPage() {
             </div>
           </div>
         </div>
-        <div className="mt-14 h-px" style={{ backgroundColor: BORDER }} />
+        <div className="mt-8 h-px" style={{ backgroundColor: BORDER }} />
       </section>
 
       {/* ============ 4. EXPERT QUOTE + FORMULA ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-8">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="md:border-r md:pr-12" style={{ borderColor: BORDER }}>
             <div
@@ -225,12 +225,12 @@ export default function MentholPage() {
               "
             </div>
             <p
-              className="text-[18px] md:text-[19px] italic leading-[1.55] -mt-4"
+              className="text-[20px] md:text-[22px] italic leading-[1.55] -mt-4"
               style={{ color: FG }}
             >
               Menthol's cooling effect comes from TRPM8 receptor activation, which can help reduce the perception of discomfort at the skin level.
             </p>
-            <p className="mt-6 text-[14px] font-semibold" style={{ color: NAVY }}>
+            <p className="mt-6 text-[15px] font-semibold" style={{ color: NAVY }}>
               — Dr. Michael Andrews, DPT
             </p>
             <p
@@ -242,15 +242,15 @@ export default function MentholPage() {
           </div>
           <div>
             <h3
-              className="text-[20px] md:text-[22px] font-bold"
+              className="text-[22px] md:text-[26px] font-bold"
               style={{ color: NAVY }}
             >
               Why we use 10% menthol in TERRAFREEZE
             </h3>
-            <p className="mt-4 text-[14.5px] leading-[1.7]" style={{ color: MUTED }}>
+            <p className="mt-4 text-[16px] leading-[1.7]" style={{ color: MUTED }}>
               Most drugstore <span style={{ color: ACCENT }}>cooling creams</span> use 1–3% menthol. We formulated TERRAFREEZE at 10% — the maximum strength recognized under the FDA OTC external analgesic monograph — because the research is clear: concentration matters. At 10%, menthol creates a sustained cooling effect that competes with pain signals long enough to actually matter.
             </p>
-            <p className="mt-4 text-[14.5px] leading-[1.7]" style={{ color: MUTED }}>
+            <p className="mt-4 text-[16px] leading-[1.7]" style={{ color: MUTED }}>
               But concentration alone isn't enough. Menthol sitting on the surface of the skin doesn't reach inflamed tissue. That's why we pair it with Emu Oil — a clinical-grade carrier that drives active ingredients through all 7 layers of skin. The cooling goes where the pain is, not just where you applied it.
             </p>
           </div>
@@ -258,14 +258,14 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 5. USE CASES + CTA ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-8">
         <div className="grid md:grid-cols-[1.6fr_1fr] gap-8">
           <div
             className="rounded-[18px] border p-7 md:p-9"
             style={{ borderColor: BORDER }}
           >
             <h3
-              className="text-[20px] md:text-[22px] font-bold"
+              className="text-[22px] md:text-[26px] font-bold"
               style={{ color: NAVY }}
             >
               How people use it
@@ -286,12 +286,12 @@ export default function MentholPage() {
                     {u.icon}
                   </div>
                   <p
-                    className="mt-3 text-[14px] font-semibold"
+                    className="mt-3 text-[15px] font-semibold"
                     style={{ color: NAVY }}
                   >
                     {u.title}
                   </p>
-                  <p className="mt-1 text-[12.5px] leading-[1.5]" style={{ color: MUTED }}>
+                  <p className="mt-1 text-[13.5px] leading-[1.55]" style={{ color: MUTED }}>
                     {u.body}
                   </p>
                 </div>
@@ -304,10 +304,10 @@ export default function MentholPage() {
             style={{ backgroundColor: NAVY_DEEP }}
           >
             <div>
-              <h3 className="text-[20px] md:text-[22px] font-bold text-white leading-[1.25]">
+              <h3 className="text-[22px] md:text-[26px] font-bold text-white leading-[1.25]">
                 Feel the difference for yourself
               </h3>
-              <p className="mt-3 text-[13.5px] leading-[1.6] text-white/70">
+              <p className="mt-3 text-[15px] leading-[1.6] text-white/70">
                 Experience fast, long-lasting cooling relief that goes where you need it.
               </p>
             </div>
@@ -323,11 +323,11 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 6. APPLICATION + SAFETY ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-8">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h3
-              className="text-[20px] md:text-[22px] font-bold"
+              className="text-[22px] md:text-[26px] font-bold"
               style={{ color: NAVY }}
             >
               How to apply safely
@@ -341,19 +341,19 @@ export default function MentholPage() {
               ].map((step, i) => (
                 <li key={step} className="flex gap-4">
                   <span
-                    className="text-[13px] font-bold w-5 shrink-0"
+                    className="text-[14px] font-bold w-5 shrink-0"
                     style={{ color: ACCENT }}
                   >
                     {i + 1}
                   </span>
-                  <span className="text-[14.5px]" style={{ color: FG }}>
+                  <span className="text-[15.5px]" style={{ color: FG }}>
                     {step}
                   </span>
                 </li>
               ))}
             </ol>
             <p
-              className="mt-6 text-[13.5px] flex gap-2 items-start"
+              className="mt-6 text-[14.5px] flex gap-2 items-start"
               style={{ color: MUTED }}
             >
               <span style={{ color: GOLD }}>💡</span>
@@ -368,12 +368,12 @@ export default function MentholPage() {
             style={{ backgroundColor: PALE }}
           >
             <h3
-              className="text-[20px] md:text-[22px] font-bold"
+              className="text-[22px] md:text-[26px] font-bold"
               style={{ color: NAVY }}
             >
               Safety & cautions
             </h3>
-            <ul className="mt-5 space-y-2.5 text-[14px]" style={{ color: FG }}>
+            <ul className="mt-5 space-y-2.5 text-[15px]" style={{ color: FG }}>
               {[
                 "For external use only",
                 "Avoid contact with eyes and mucous membranes",
@@ -387,18 +387,18 @@ export default function MentholPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 text-[13px]" style={{ color: MUTED }}>
+            <p className="mt-5 text-[14px]" style={{ color: MUTED }}>
               Not intended for children under 12.
             </p>
           </div>
         </div>
-        <div className="mt-12 h-px" style={{ backgroundColor: BORDER }} />
+        <div className="mt-8 h-px" style={{ backgroundColor: BORDER }} />
       </section>
 
       {/* ============ 7. CUSTOMER REVIEWS ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-8">
         <h3
-          className="text-[20px] md:text-[22px] font-bold"
+          className="text-[22px] md:text-[26px] font-bold"
           style={{ color: NAVY }}
         >
           What customers are saying
@@ -446,10 +446,10 @@ export default function MentholPage() {
                     <span key={i}>{s}</span>
                   ))}
                 </div>
-                <p className="mt-3 text-[13.5px] leading-[1.65] italic" style={{ color: FG }}>
+                <p className="mt-3 text-[14.5px] leading-[1.65] italic" style={{ color: FG }}>
                   {r.body}
                 </p>
-                <p className="mt-4 text-[13px]" style={{ color: NAVY }}>
+                <p className="mt-4 text-[14px]" style={{ color: NAVY }}>
                   <span className="font-semibold">— {r.name},</span>{" "}
                   <span style={{ color: MUTED }}>{r.tag}</span>
                 </p>
@@ -457,15 +457,15 @@ export default function MentholPage() {
             ))}
           </div>
         </div>
-        <div className="mt-12 h-px" style={{ backgroundColor: BORDER }} />
+        <div className="mt-8 h-px" style={{ backgroundColor: BORDER }} />
       </section>
 
       {/* ============ 8. FAQ + CTA ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-8">
         <div className="grid md:grid-cols-[1.4fr_1fr] gap-8">
           <div>
             <h3
-              className="text-[20px] md:text-[22px] font-bold"
+              className="text-[22px] md:text-[26px] font-bold"
               style={{ color: NAVY }}
             >
               FAQs
@@ -484,7 +484,7 @@ export default function MentholPage() {
                       onClick={() => setOpenFaq(open ? null : i)}
                       className="flex w-full items-center justify-between px-4 py-3.5 text-left"
                     >
-                      <span className="text-[14px] font-medium" style={{ color: NAVY }}>
+                      <span className="text-[15px] font-medium" style={{ color: NAVY }}>
                         {f.q}
                       </span>
                       <span
@@ -496,7 +496,7 @@ export default function MentholPage() {
                     </button>
                     {open && (
                       <div
-                        className="px-4 pb-4 text-[13.5px] leading-[1.65]"
+                        className="px-4 pb-4 text-[14.5px] leading-[1.65]"
                         style={{ color: MUTED }}
                       >
                         {f.a}
@@ -512,10 +512,10 @@ export default function MentholPage() {
             className="rounded-[18px] p-7 md:p-8 flex flex-col justify-center h-fit"
             style={{ backgroundColor: NAVY_DEEP }}
           >
-            <h3 className="text-[20px] md:text-[22px] font-bold text-white leading-[1.25]">
+            <h3 className="text-[22px] md:text-[26px] font-bold text-white leading-[1.25]">
               Ready for real relief?
             </h3>
-            <p className="mt-3 text-[13.5px] leading-[1.6] text-white/70">
+            <p className="mt-3 text-[15px] leading-[1.6] text-white/70">
               Join thousands who trust TERRAFREEZE for fast, effective cooling relief.
             </p>
             <button
@@ -530,7 +530,7 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 9. REFERENCES ============ */}
-      <section className="mx-auto max-w-[960px] px-6 py-10">
+      <section className="mx-auto max-w-[960px] px-6 py-8">
         <h3
           className="text-[16px] font-bold"
           style={{ color: NAVY }}
@@ -552,7 +552,7 @@ export default function MentholPage() {
       </section>
 
       {/* ============ 10. FOOTER RESOURCE BLOCK ============ */}
-      <section className="mx-auto max-w-[960px] px-6 pb-16 pt-6">
+      <section className="mx-auto max-w-[960px] px-6 pb-12 pt-4">
         <div
           className="rounded-[18px] p-8 md:p-10 grid md:grid-cols-3 gap-8"
           style={{ backgroundColor: PALE }}
@@ -562,7 +562,7 @@ export default function MentholPage() {
               Related Ingredients
             </h4>
             {/* RELATED_INGREDIENTS */}
-            <ul className="mt-4 space-y-2 text-[13.5px]">
+            <ul className="mt-4 space-y-2 text-[14.5px]">
               {["Emu Oil", "Camphor", "Arnica", "Aloe Vera"].map((r) => (
                 <li key={r}>
                   <a href="#" className="underline" style={{ color: ACCENT }}>
@@ -576,7 +576,7 @@ export default function MentholPage() {
             <h4 className="text-[15px] font-bold" style={{ color: NAVY }}>
               Helpful Links
             </h4>
-            <ul className="mt-4 space-y-2 text-[13.5px]">
+            <ul className="mt-4 space-y-2 text-[14.5px]">
               {["About TERRAFREEZE", "How It Works", "Ingredients Overview", "FAQs"].map((r) => (
                 <li key={r}>
                   <a href="#" className="underline" style={{ color: ACCENT }}>
@@ -598,7 +598,7 @@ export default function MentholPage() {
                 MA
               </div>
               <div>
-                <p className="text-[13.5px] font-semibold" style={{ color: NAVY }}>
+                <p className="text-[14.5px] font-semibold" style={{ color: NAVY }}>
                   Dr. Michael Andrews, DPT
                 </p>
                 <p className="text-[12px]" style={{ color: MUTED }}>
