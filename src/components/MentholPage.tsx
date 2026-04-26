@@ -93,22 +93,22 @@ export default function MentholPage() {
       {/* ============ 3. EDUCATION + SCIENCE ============ */}
       <section className={`${WRAP} ${SECT}`}>
         <div className="grid md:grid-cols-2 items-start" style={{ gap: 40 }}>
-          <div>
-            <h2 className="text-[26px] md:text-[32px] font-bold leading-[1.2]" style={{ color: NAVY }}>
+          <div className="w-full">
+            <h2 className="text-[28px] md:text-[34px] font-bold leading-[1.15]" style={{ color: NAVY }}>
               What is menthol and why does it feel so cooling?
             </h2>
-            <p className="text-[17px] leading-[1.65]" style={{ color: MUTED, marginTop: 14 }}>
+            <p className="text-[16px] leading-[1.7] w-full" style={{ color: MUTED, marginTop: 16 }}>
               Menthol stimulates cold-sensing receptors in the skin, producing an icy-cool sensation that helps reduce the perception of pain and calms surface discomfort quickly.
             </p>
-            <ul style={{ marginTop: 18 }}>
+            <ul style={{ marginTop: 22 }}>
               {[
                 "Delivers cooling relief in seconds",
                 "Helps ease minor muscle and joint aches",
                 "Fresh, clean scent without heavy ointment smell",
               ].map((item, i) => (
-                <li key={item} className="flex items-start gap-4" style={{ marginTop: i === 0 ? 0 : 8 }}>
+                <li key={item} className="flex items-start gap-4" style={{ marginTop: i === 0 ? 0 : 14 }}>
                   <span className="mt-1.5 h-[18px] w-[3px] rounded-full shrink-0" style={{ backgroundColor: ACCENT }} />
-                  <span className="text-[16px]" style={{ color: FG }}>{item}</span>
+                  <span className="text-[15.5px]" style={{ color: FG }}>{item}</span>
                 </li>
               ))}
             </ul>
@@ -121,15 +121,40 @@ export default function MentholPage() {
             </h3>
             <div style={{ marginTop: 24 }}>
               {[
-                { label: "Cold receptors", title: "Activates cold receptors", body: "Menthol binds to TRPM8 receptors on sensory nerves, creating a cooling sensation." },
-                { label: "Pain signaling", title: "Helps reduce pain signals", body: 'The cooling effect may "distract" from pain by competing with pain signals sent to the brain.' },
-                { label: "Onset", title: "Fast acting, temporary relief", body: "Cooling begins within seconds and provides short-term relief for sore, tired muscles and joints." },
+                {
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7">
+                      <path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07L19.07 4.93M7 5l5 3 5-3M7 19l5-3 5 3M5 7l3 5-3 5M19 7l-3 5 3 5" />
+                    </svg>
+                  ),
+                  title: "Activates cold receptors",
+                  body: "Menthol binds to TRPM8 receptors on sensory nerves, creating a cooling sensation.",
+                },
+                {
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7">
+                      <path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07L19.07 4.93M7 5l5 3 5-3M7 19l5-3 5 3M5 7l3 5-3 5M19 7l-3 5 3 5" />
+                    </svg>
+                  ),
+                  title: "Helps reduce pain signals",
+                  body: 'The cooling effect may "distract" from pain by competing with pain signals sent to the brain.',
+                },
+                {
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 7v5l3 2" />
+                    </svg>
+                  ),
+                  title: "Fast acting, temporary relief",
+                  body: "Cooling begins within seconds and provides short-term relief for sore, tired muscles and joints.",
+                },
               ].map((p, i) => (
-                <div key={p.title} className="grid grid-cols-[110px_1fr] gap-5" style={{ marginTop: i === 0 ? 0 : 18 }}>
-                  <p className="text-[11px] font-semibold tracking-[0.14em] uppercase" style={{ color: MUTED, paddingTop: 2 }}>{p.label}</p>
+                <div key={p.title} className="flex gap-4" style={{ marginTop: i === 0 ? 0 : 22 }}>
+                  <div className="shrink-0" style={{ color: ACCENT }}>{p.icon}</div>
                   <div>
-                    <p className="font-semibold text-[16px]" style={{ color: NAVY }}>{p.title}</p>
-                    <p className="text-[15px] leading-[1.6]" style={{ color: MUTED, marginTop: 4 }}>{p.body}</p>
+                    <p className="font-bold text-[16px]" style={{ color: NAVY }}>{p.title}</p>
+                    <p className="text-[14.5px] leading-[1.6]" style={{ color: MUTED, marginTop: 4 }}>{p.body}</p>
                   </div>
                 </div>
               ))}
